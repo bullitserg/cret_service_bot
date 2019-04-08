@@ -5,7 +5,7 @@ from bot_queries import bot_queries
 
 class BotDbFunctions:
     def __init__(self):
-        self.BOT_DB_CONNECTION = Mc(connection=Mc.MS_BOT_CONNECT).connect()
+        self.BOT_DB_CONNECTION = Mc(connection=Mc.MS_SERVICE_BOT_CONNECT).connect()
 
     # Функция получения пароля
     def get_password(self, chat_id):
